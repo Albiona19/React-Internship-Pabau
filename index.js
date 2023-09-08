@@ -28,7 +28,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function changeValues() {
     checkboxes.forEach((checkbox) => {
-      // Change the values to something of your choice
       checkbox.value = "NewValue" + (Math.random() * 100).toFixed(0);
     });
   }
