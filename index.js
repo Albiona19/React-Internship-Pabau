@@ -20,3 +20,19 @@ document.addEventListener("DOMContentLoaded", function () {
             checkboxContainer.appendChild(checkbox);
         });
     }
+
+    function changeValues() {
+        checkboxes.forEach((checkbox) => {
+            // Change the values to something of your choice
+            checkbox.value = "NewValue" + (Math.random() * 100).toFixed(0);
+        });
+    }
+
+    function showSelectedValues() {
+        const selectedValues = Array.from(checkboxes)
+            .filter((checkbox) => checkbox.checked)
+            .map((checkbox) => checkbox.value);
+
+        selectedValuesDiv.textContent = "Selected Values: " + selectedValues.join(", ");
+    }
+});
