@@ -1,0 +1,57 @@
+/* Style the main container */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the header */
+h1 {
+  background-color: #3498db;
+  color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Style the form container */
+#checkboxForm {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+  display: inline-block;
+}
+
+/* Style the labels for checkboxes */
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Style the checkboxes */
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+/* Style the buttons */
+button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+/* Style the selected values display */
+#selectedValues {
+  margin-top: 20px;
+  font-weight: bold;
+}
