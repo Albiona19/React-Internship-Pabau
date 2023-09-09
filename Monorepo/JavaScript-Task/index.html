@@ -4,39 +4,35 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JavaScript</title>
-    <link
-      rel="shortcut icon"
-      href="https://camo.githubusercontent.com/ac89bf09db8ab8f4f5da843612540495d14b5b8209cb74231eea580c06eb9eb1/68747470733a2f2f7777772e70616261752e636f6d2f77702d636f6e74656e742f75706c6f6164732f656c656d656e746f722f7468756d62732f646f776e6c6f61642d70713366736e6169746779796c7572626672797a6967686d34367939626535386c6f796d747334656f6b2e706e67"
-    />
+    <link rel="shortcut icon" href="https://camo.githubusercontent.com/ac89bf09db8ab8f4f5da843612540495d14b5b8209cb74231eea580c06eb9eb1/68747470733a2f2f7777772e70616261752e636f6d2f77702d636f6e74656e742f75706c6f6164732f656c656d656e746f722f7468756d62732f646f776e6c6f61642d70713366736e6169746779796c7572626672797a6967686d34367939626535386c6f796d747334656f6b2e706e67"/>
     <style>
-      /* Reset some default styles */
       body,
       h1 {
         margin: 0;
         padding: 0;
       }
-
-      /* Global styles */
+      /*body style*/
       body {
         font-family: Arial, sans-serif;
         background-color: #f0f0f0;
         padding: 20px;
         text-align: center;
       }
-
+      /* h1 style  */
       h1 {
         color: #333;
         margin-bottom: 20px;
       }
-
-      /* Checkbox container styles */
+      /*check box container style*/
       .checkbox-container {
         display: flex;
         align-items: center;
         margin-bottom: 10px;
+        flex-direction: column;
+        height: 40px;
       }
 
-      /* Checkbox styles */
+      /*checkboxes styled*/
       input[type="checkbox"] {
         width: 20px;
         height: 20px;
@@ -48,12 +44,13 @@
         cursor: pointer;
       }
 
+      /*checked checkboxes styled*/
       input[type="checkbox"]:checked {
         background-color: #2196f3;
         border-color: #2196f3;
       }
 
-      /* Checkbox label styles */
+      /*label style*/
       label {
         font-size: 16px;
       }
@@ -104,14 +101,16 @@
         <input type="checkbox" id="career" value="Career" />
         <label for="career">Career</label>
       </div>
-
+      <div class="button">
       <button type="button" id="shuffleButton">Shuffle Values</button>
       <button type="button" id="changeButton">Change Values</button>
       <button type="button" id="showButton">Show Selected Values</button>
-    </form>
-
+    </div>
+    
     <div id="selectedValues"></div>
 
+    
+  </form>
     <script src="index.js"></script>
   </body>
 </html>
