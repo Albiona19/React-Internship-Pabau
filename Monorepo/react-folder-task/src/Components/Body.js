@@ -1,18 +1,22 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
-const Body = () => {
-  const options = ['Option 1', 'Option 2', 'Option 3', 'Option 4'];
-
+function Body({ options, handleOptionClick }) {
   return (
-    <div>
-      {options.map((option, index) => (
-        <div key={index}>
-          <Link to={`/selection/${option}`}>{option}</Link>
-        </div>
-      ))}
+    <div className="body">
+      <h2>Select an Option:</h2>
+      <ul className="options">
+        {options.map((option, index) => (
+          <li
+            key={index}
+            className="option"
+            onClick={() => handleOptionClick(option)}
+          >
+            {option}
+          </li>
+        ))}
+      </ul>
     </div>
   );
-};
+}
 
 export default Body;

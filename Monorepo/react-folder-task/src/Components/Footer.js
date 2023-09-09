@@ -1,18 +1,13 @@
 import React from 'react';
-import { useHistory } from 'react-router-dom';
 
-const Footer = () => {
-  const history = useHistory();
-
-  const handleBackClick = () => {
-    history.goBack();
-  };
-
+function Footer({ handleBackClick }) {
   return (
-    <footer>
-      <button onClick={handleBackClick}>Back</button>
+    <footer className="footer">
+      <button className="back-button" onClick={handleBackClick}>
+        Back
+      </button>
     </footer>
   );
-};
+}
 
 export default Footer;

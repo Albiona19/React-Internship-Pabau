@@ -1,15 +1,12 @@
 import React from 'react';
-import { useLocation } from 'react-router-dom';
 
-const Header = () => {
-  const location = useLocation();
-  const isMainStep = location.pathname === '/';
-
+function Header({ currentStep }) {
   return (
-    <header>
-      Current Step: {isMainStep ? '1/2' : '2/2'}
+    <header className="header">
+      <h1>My App</h1>
+      <div>{currentStep}</div>
     </header>
   );
-};
+}
 
 export default Header;
