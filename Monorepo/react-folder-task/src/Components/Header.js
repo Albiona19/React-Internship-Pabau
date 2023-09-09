@@ -3,7 +3,7 @@ import React from 'react';
 function Header({ currentStep }) {
   return (
     <header className="header">
-      <h1>My App</h1>
+      <h1>Choose Service</h1>
       <div>{currentStep}</div>
     </header>
   );

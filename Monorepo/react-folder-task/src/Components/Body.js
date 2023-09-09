@@ -20,3 +20,4 @@ function Body({ options, handleOptionClick }) {
 }
 
 export default Body;
+
